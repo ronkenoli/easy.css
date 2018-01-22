@@ -1,0 +1,36 @@
+/* 
+ * CSS Easy
+ * Author - Marcelo Ronkenoli
+ * v 1.0
+ * https://github.com/ronkenoli/easy.css
+ */
+
+
+/*
+ *  FONTES
+ */
+@import 'fonts.css';
+
+
+/*
+ * HACKS
+ */
+@import 'hacks.css';
+
+
+/*
+ * Overlap
+ */
+@import 'overlap.css';
+
+
+/*
+ * Margin
+ */
+@import 'margin.css';
+
+
+/*
+ * Padding
+ */
+@import 'padding.css';

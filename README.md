@@ -5,19 +5,19 @@
 `easy.css` é uma pequena biblioteca com os estilos mais usados pelos Desenvolvedores WEB, desta forma fica bem fácil criar um código limpo, bonito e legível.
 
 ## Instalação
-1. Inclua o 'stylesheet' no `<head>` do documento
+   1. Inclua o 'stylesheet' no `<head>` do documento
 
-    ```html
-    <head>
-    <link rel="stylesheet" href="easy.css">
-    </head>
-    ```
+```html
+<head>
+    <link rel="stylesheet" href="easy.css">
+</head>
+```
   
-2. Combine as classes desejadas ao elemento que desejar. Exemplo:
-    ```html
-    <h1 class="p-0 mb-40 inline-block">Exemplo</h1>
-    ```
-    *Nota: Acima estamos declarando que o h1 tem padding 0, margin-bottom 40px e display inline-block*
+    2. Combine as classes desejadas ao elemento que desejar. Exemplo:
+```html
+ <h1 class="p-0 mb-40 inline-block">Exemplo</h1>
+```
+*Nota: Acima estamos declarando que o h1 tem padding 0, margin-bottom 40px e display inline-block*
     
     
 ## Conheça as Classes
@@ -131,35 +131,41 @@ _Exemplo de uso:_
 
 As espessuras são divididas em 6 tipos com 2 variações cada, são elas:
 
-   **Extra Light**     
-   * _.f-extra-light (font-weight:200;)_
-   * _.f-extra-light-italic (font-weight:200; font-style:italic;)_
+   **Extra Light** 
+   * _.f-extra-light (font-weight:200;)_
+   * _.f-extra-light-italic (font-weight:200; font-style:italic;)_
       
-      
-   **Light**
-   * _.f-light (font-weight:300)_
-   * _.f-light-italic (font-weight:300; font-style:italic;)_
+
+   **Light**
+   * _.f-light (font-weight:300)_
+   * _.f-light-italic (font-weight:300; font-style:italic;)_
    
    
-   **Regular**
-   * _.f-regular (font-weight:400;)_
-   * _.f-regular-italic (font-weight:400; font-style:italic;)_
+   
+   **Regular**
+   * _.f-regular (font-weight:400;)_
+   * _.f-regular-italic (font-weight:400; font-style:italic;)_
    
    
-   **Semi Bold**
-   * _.f-semi-bold (font-weight:600;)_
-   * _.f-semi-bold-italic (font-weight:600; font-style:italic;)_
+   
+   **Semi Bold**
+   * _.f-semi-bold (font-weight:600;)_
+   * _.f-semi-bold-italic (font-weight:600; font-style:italic;)_
    
    
-   **Bold**
-   * _.f-bold (font-weight:700;)_
-   * _.f-bold-italic (font-weight:700; font-style:italic;)_
+   
+   **Bold**
+   * _.f-bold (font-weight:700;)_
+   * _.f-bold-italic (font-weight:700; font-style:italic;)_
          
    
-   **Extra Bold**
-   * _.f-extra-bold (font-weight:800;)_
-   * _.f-extra-bold-italic (font-weight:800; font-style:italic;)_
+   
+   **Extra Bold**
+   * _.f-extra-bold (font-weight:800;)_
+   * _.f-extra-bold-italic (font-weight:800; font-style:italic;)_
     
+
+
 _Exemplo:_
 ```html
 <p class="f-bold-italic">Exemplo</p>
@@ -201,23 +207,23 @@ As `hacks` são classes ja definidas, conheça:
 **_.row-eq-height_**
 Ele deixa as divs de dentro com a mesma altura
 ```css
-    .row-eq-height {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    }
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
 ```
 
 **_.center-y_**
 Centraliza o elemento no eixo Y
 ```css
 .center-y {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 ```
 
@@ -225,7 +231,7 @@ Centraliza o elemento no eixo Y
 Apenas define nosso elemento como relativo
 ```css
 .relative{
-    position: relative;
+    position: relative;
 }
 ```
 
@@ -233,7 +239,7 @@ Apenas define nosso elemento como relativo
 Muda nosso elemento pra display inline-block
 ```css
 .inline-block{
-    display: inline-block !important;
+    display: inline-block !important;
 }
 ```
 
@@ -242,7 +248,7 @@ Muda nosso elemento pra display inline-block
 Adicionar quebra de palavra
 ```css
 .break-word{
-    word-wrap: break-word;
+    word-wrap: break-word;
 }
 ```
 
@@ -251,10 +257,10 @@ Adicionar quebra de palavra
 Link com underline no hover
 ```css
 .hover-underline{
-    text-decoration: none;
+    text-decoration: none;
 }
 .hover-underline:hover{
-    text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 ```
 
@@ -263,10 +269,10 @@ Link com underline no hover
 Link sem underline sempre
 ```css
 .no-underline{
-    text-decoration: none !important;
+    text-decoration: none !important;
 }
 .no-underline:hover{
-    text-decoration: none !important;
+    text-decoration: none !important;
 }
 ```
 
@@ -275,8 +281,8 @@ Link sem underline sempre
 Remove o background e a borda
 ```css
 .button-reset{
-    background: transparent;
-    border: none;
+    background: transparent;
+    border: none;
 }
 ```
 
@@ -286,14 +292,14 @@ Remove o background e a borda
 O link cobre toda a area do seu relative
 ```css
 .btn-full{
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-indent: -999999px;
-    z-index: 10;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-indent: -999999px;
+    z-index: 10;
 }
 ```
 
@@ -303,8 +309,8 @@ O link cobre toda a area do seu relative
 O bg preenche todo o elemento
 ```css
 .bg-cover{
-    -webkit-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 ```
 

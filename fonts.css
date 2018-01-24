@@ -1589,7 +1589,7 @@
  * Font Size LG
  */
 
-@media (min-width: 1280px) and (max-width: 1919px){
+@media (min-width: 1280px) and ((max-width: 1600px)){
     .s-lg-dot1{
         font-size: .1em;
     }
@@ -1986,7 +1986,7 @@
  * Font Size XL
  */
 
-@media (min-width: 1920px) and (max-width: 5000px){
+@media ((min-width: 1601px)) and (max-width: 5000px){
     .s-xl-dot1{
         font-size: .1em;
     }
@@ -2611,7 +2611,7 @@
  * Font Weight LG
  */
 
-@media (min-width: 1280px) and (max-width: 1919px){
+@media (min-width: 1280px) and ((max-width: 1600px)){
     .f-lg-extra-light {
         font-weight: 200;
     }
@@ -2671,7 +2671,7 @@
  * Font Weight XL
  */
 
-@media (min-width: 1920px) and (max-width: 5000px){
+@media ((min-width: 1601px)) and (max-width: 5000px){
     .f-xl-extra-light {
         font-weight: 200;
     }
@@ -4707,7 +4707,7 @@
  * Line Height LG
  */
 
-@media (min-width: 1280px) and (max-width: 1919px){
+@media (min-width: 1280px) and ((max-width: 1600px)){
     .lh-lg-dot1 {
         line-height: .1em;
     }
@@ -5233,7 +5233,7 @@
  * Line Height XL
  */
 
-@media (min-width: 1920px) and (max-width: 5000px){
+@media ((min-width: 1601px)) and (max-width: 5000px){
     .lh-xl-dot1 {
         line-height: .1em;
     }

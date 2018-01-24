@@ -122,7 +122,7 @@
 /*
  * LG
  */
-@media (min-width: 1280px) and (max-width: 1919px){
+@media (min-width: 1280px) and ((max-width: 1600px)){
     .text-center-lg {
         text-align: center!important
     }
@@ -141,7 +141,7 @@
 /*
  * XL
  */
-@media (min-width: 1920px) and (max-width: 5000px){
+@media ((min-width: 1601px)) and (max-width: 5000px){
     .text-center-xl {
         text-align: center!important
     }

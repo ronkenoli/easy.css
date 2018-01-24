@@ -23,7 +23,7 @@
 ## Conheça as Classes
 Vamos detalhar Classe por Classe, mas vai ajudar se pensar de forma logica as nomeclaturas quando estiver codificando.
 
-*Vamos separar por 5 categorias: Padding, Margin, Fonts, Hacks e Overlap.*
+*Vamos separar por 5 categorias: **Padding**, **Margin**, **Fonts**, **Hacks** e **Overlap**.*
 
 
 ### Padding
@@ -102,7 +102,7 @@ Os valores do `margin` são de 0 ate 400px com escala de multiplos de 5, identic
 Com o `easy.css` fica fácil declarar o tamanho da font, espessura e distancia das linhas do seus textos.
 
 
-##### Tamanho das fonts
+#### Tamanho das fonts
 
 Os valores do tamanho são de .01em a 13em. Exemplo:
 
@@ -122,7 +122,7 @@ Os valores do tamanho são de .01em a 13em. Exemplo:
 
 ```
 
-######Exemplo:
+#####Exemplo:
 
 ```html
 <p class="s-1dot5">Exemplo</p>
@@ -131,35 +131,41 @@ Os valores do tamanho são de .01em a 13em. Exemplo:
 *Nota: desta forma nosso elemento tem 1.5em do tamanho da font*
 
 
-##### Espessura
+#### Espessura
 
 As espessuras são divididas em 6 com 2 variações cada, são elas:
-     
-   * .f-extra-light (font-weight:200;)
-   * .f-extra-light-italic (font-weight:200; font-style:italic;)
+
+   **Extra Light**     
+   * _.f-extra-light (font-weight:200;)_
+   * _.f-extra-light-italic (font-weight:200; font-style:italic;)_
+      
+      
+   **Light**
+   * _.f-light (font-weight:300)_
+   * _.f-light-italic (font-weight:300; font-style:italic;)_
    
    
-   * .f-light (font-weight:300)
-   * .f-light-italic (font-weight:300; font-style:italic;)
+   **Regular**
+   * _.f-regular (font-weight:400;)_
+   * _.f-regular-italic (font-weight:400; font-style:italic;)_
    
    
-   * .f-regular (font-weight:400;)
-   * .f-regular-italic (font-weight:400; font-style:italic;)
+   **Semi Bold**
+   * _.f-semi-bold (font-weight:600;)_
+   * _.f-semi-bold-italic (font-weight:600; font-style:italic;)_
    
    
-   * .f-semi-bold (font-weight:600;)
-   * .f-semi-bold-italic (font-weight:600; font-style:italic;)
-   
-   
-   * .f-bold (font-weight:700;)
-   * .f-bold-italic (font-weight:700; font-style:italic;)
+   **Bold**
+   * _.f-bold (font-weight:700;)_
+   * _.f-bold-italic (font-weight:700; font-style:italic;)_
          
    
-   * .f-extra-bold (font-weight:800;)
-   * .f-extra-bold-italic (font-weight:800; font-style:italic;)
+   **Extra Bold**
+   * _.f-extra-bold (font-weight:800;)_
+   * _.f-extra-bold-italic (font-weight:800; font-style:italic;)_
     
 
-######Exemplo:
+#####Exemplo:
 
 ```html
 <p class="f-bold-italic">Exemplo</p>
@@ -168,7 +174,7 @@ As espessuras são divididas em 6 com 2 variações cada, são elas:
 *Nota: desta forma nosso elemento seria bold italico*
 
 
-##### Distancia entre as linhas
+#### Distancia entre as linhas
 
 Os valores das distancias são de .01em a 13em. Exemplo:
 
@@ -187,13 +193,179 @@ lh-12dot9 = line-height: line-height: 12.9em;
 lh-13 = line-height: line-height: 13em;
 ```
 
-######Exemplo:
+#####Exemplo:
 
 ```html
 <p class="lh-1dot4">Exemplo</p>
 ```
 
 *Nota: desta forma nosso elemento tem um espaçamento entre as linhas de 1.4em*
+
+
+
+### Hacks
+
+As `Hacks` são class ja predefinidas, são elas:
+
+
+####.row-eq-height
+Ele deixa as divs de dentro com a mesma altura
+```css
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+```
+
+####.center-y
+Centraliza o elemento no eixo y
+```css
+.center-y {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+```
+
+####.relative
+Apenas define nosso elemento como relativo
+```css
+.relative{
+    position: relative;
+}
+```
+
+####.inline-block
+Define nosso elemento com display inline-block
+```css
+.inline-block{
+    display: inline-block !important;
+}
+```
+
+
+####.break-word
+Para adicionar quebra de palavra
+```css
+.break-word{
+    word-wrap: break-word;
+}
+```
+
+
+####.hover-underline
+Link com underline no hover
+```css
+.hover-underline{
+    text-decoration: none;
+}
+.hover-underline:hover{
+    text-decoration: underline !important;
+}
+```
+
+
+####.no-underline
+Link sem underline sempre
+```css
+.no-underline{
+    text-decoration: none !important;
+}
+.no-underline:hover{
+    text-decoration: none !important;
+}
+```
+
+
+####.button-reset
+Removo o background e borda
+```css
+.button-reset{
+    background: transparent;
+    border: none;
+}
+```
+
+
+
+####.btn-full
+O link cobre toda a area do seu relative
+```css
+.btn-full{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-indent: -999999px;
+    z-index: 10;
+}
+```
+
+
+
+####.bg-cover
+O bg preenche todo o elemento
+```css
+.bg-cover{
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+```
+
+####Opacity
+
+É bem simples, a transparencia é dividida em uma escala de 1 a 10: ( _sendo 1 mais claro e 10 mais ecuro_ )
+
+```note
+.opacity-1
+.opacity-2
+.opacity-3
+.opacity-4
+.opacity-5
+.opacity-6
+.opacity-7
+.opacity-8
+.opacity-9
+.opacity-10
+```
+
+
+
+
+####Placeholder Color
+
+Quem trabalha com placeholder nos inputs sabe o quanto eles são chatos de trocar as cores, no `easy.css` ja temos 2 cores definidas, preto e branco.
+
+
+```note
+.place-black
+.place-white
+```
+
+
+####Border Radius
+Pra deixar a borda erredonda usamos um escala de 0 a 100 com intervalo de 5 em 5 porcento.
+
+```note
+.radius-0
+.radius-5
+.radius-10
+...
+.radius-50
+.radius-55
+.radius-60
+...
+.radius-90
+.radius-95
+.radius-100
+```
+
 
 
 

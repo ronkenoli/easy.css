@@ -122,7 +122,8 @@ Os valores do tamanho são de .01em a 13em. Exemplo:
 
 ```
 
-#####Exemplo:
+_Exemplo:_
+
 
 ```html
 <p class="s-1dot5">Exemplo</p>
@@ -165,7 +166,7 @@ As espessuras são divididas em 6 com 2 variações cada, são elas:
    * _.f-extra-bold-italic (font-weight:800; font-style:italic;)_
     
 
-#####Exemplo:
+_Exemplo:_
 
 ```html
 <p class="f-bold-italic">Exemplo</p>
@@ -193,7 +194,7 @@ lh-12dot9 = line-height: line-height: 12.9em;
 lh-13 = line-height: line-height: 13em;
 ```
 
-#####Exemplo:
+_Exemplo:_
 
 ```html
 <p class="lh-1dot4">Exemplo</p>
@@ -208,18 +209,20 @@ lh-13 = line-height: line-height: 13em;
 As `Hacks` são class ja predefinidas, são elas:
 
 
-####.row-eq-height
+**_.row-eq-height_**
+
 Ele deixa as divs de dentro com a mesma altura
 ```css
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
 ```
 
-####.center-y
+**_.center-y_**
+
 Centraliza o elemento no eixo y
 ```css
 .center-y {
@@ -231,7 +234,8 @@ Centraliza o elemento no eixo y
 }
 ```
 
-####.relative
+**_relative_**
+
 Apenas define nosso elemento como relativo
 ```css
 .relative{
@@ -239,7 +243,8 @@ Apenas define nosso elemento como relativo
 }
 ```
 
-####.inline-block
+**_inline-block_**
+
 Define nosso elemento com display inline-block
 ```css
 .inline-block{
@@ -248,7 +253,8 @@ Define nosso elemento com display inline-block
 ```
 
 
-####.break-word
+**_break-word_**
+
 Para adicionar quebra de palavra
 ```css
 .break-word{
@@ -257,7 +263,8 @@ Para adicionar quebra de palavra
 ```
 
 
-####.hover-underline
+**_hover-underline_**
+
 Link com underline no hover
 ```css
 .hover-underline{
@@ -269,7 +276,8 @@ Link com underline no hover
 ```
 
 
-####.no-underline
+**_no-underline_**
+
 Link sem underline sempre
 ```css
 .no-underline{
@@ -281,7 +289,8 @@ Link sem underline sempre
 ```
 
 
-####.button-reset
+**_button-reset_**
+
 Removo o background e borda
 ```css
 .button-reset{
@@ -292,7 +301,8 @@ Removo o background e borda
 
 
 
-####.btn-full
+**_btn-full_**
+
 O link cobre toda a area do seu relative
 ```css
 .btn-full{
@@ -309,7 +319,8 @@ O link cobre toda a area do seu relative
 
 
 
-####.bg-cover
+**_bg-cover_**
+
 O bg preenche todo o elemento
 ```css
 .bg-cover{
@@ -318,7 +329,7 @@ O bg preenche todo o elemento
 }
 ```
 
-####Opacity
+**_Opacity_**
 
 É bem simples, a transparencia é dividida em uma escala de 1 a 10: ( _sendo 1 mais claro e 10 mais ecuro_ )
 
@@ -338,7 +349,7 @@ O bg preenche todo o elemento
 
 
 
-####Placeholder Color
+**_Placeholder Color_**
 
 Quem trabalha com placeholder nos inputs sabe o quanto eles são chatos de trocar as cores, no `easy.css` ja temos 2 cores definidas, preto e branco.
 
@@ -349,7 +360,8 @@ Quem trabalha com placeholder nos inputs sabe o quanto eles são chatos de troca
 ```
 
 
-####Border Radius
+**_Border Radius_**
+
 Pra deixar a borda erredonda usamos um escala de 0 a 100 com intervalo de 5 em 5 porcento.
 
 ```note
